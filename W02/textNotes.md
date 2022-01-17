@@ -265,3 +265,35 @@ public ArrayList(int capacity) {
 
 ## Chapter 16, Linked Lists
 
+random access: ability to quickly jump around contiguous blocks of memory
+
+linked lists -> don't have the fast random access and easy traversal of arrays, but easily allow for insertions, deletions, and resizing.
+
+```java
+
+public class ListNode{
+    // usually public
+    public int data;
+    // recursive structure -> often solved with recursion
+    public ListNode next;
+}
+
+// common LL traversal
+<temp variable> = <front of list>;
+while (<temp variable> != null) {
+    <do something with <temp variable>.data>;
+    <temp> variable> = <temp variable>.next;
+}
+
+public class dummyClass implements dummyInterface {}
+```
+
+if you want to use a for-each loop, you have to implement `Iterable<E>`
+
+### Different Types of Linked Lists
+
+- circular
+
+- dummy nodes
+
+- doubly linked
